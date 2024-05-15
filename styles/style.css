@@ -87,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   /* flex-wrap: wrap; */
-  margin: 0 auto;
+  margin: 45px auto;
 }
 
 .hero-text {
@@ -174,11 +174,145 @@ body {
   right: 0;
   bottom: 60px;
 }
-
-/* .hero-ver */
-
 /* hero end */
 
+/* Service */
+.service {
+  display: flex;
+  flex-direction: column;
+  margin: 130px auto 130px;
+  height: 505px;
+}
+
+.service-text__heading {
+  display: flex;
+  justify-content: center;
+}
+
+.service-text__heading > h1 {
+  width: 695px;
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.service-card__container {
+  display: flex;
+  gap: 10px;
+}
+
+.service-card {
+  width: 368px;
+  height: 294px;
+  position: relative;
+}
+
+.service-card__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card__icon {
+  width: 69px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.service-card__icon > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.uiux {
+  background: rgba(84, 84, 212, 0.1);
+}
+
+.gd {
+  background: rgba(240, 64, 55, 0.1);
+}
+
+.md {
+  background: rgba(254, 220, 90, 0.1);
+}
+/* 
+.service-card__title {
+  width: 199px;
+} */
+.service-card__title > h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.75px;
+}
+
+.service-card__text > p {
+  width: 299px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+
+.service-card__ball {
+  position: absolute;
+  left: 47%;
+  top: 283px;
+  display: none;
+}
+
+.service-card:hover .service-card__ball {
+  display: block;
+}
+
+.service-card:hover {
+  border-radius: 40px;
+  border: 1px solid #6d6665;
+}
+
+.service-vector {
+  position: absolute;
+}
+
+.service-vector__1 {
+  position: relative;
+  right: 76px;
+  bottom: 85px;
+}
+
+.service-vector__2 {
+  position: relative;
+  top: 450px;
+  right: 235px;
+}
+
+.service-vector__3 {
+  position: relative;
+  left: 999px;
+  top: 94px;
+}
+
+/* Service end */
+
+/* Footer */
 footer {
   margin-top: auto;
   width: 100%;
@@ -186,3 +320,4 @@ footer {
   background: red;
   color: aliceblue;
 }
+/* Footer end */
