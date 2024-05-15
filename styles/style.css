@@ -81,7 +81,34 @@ body {
   background: #ff5151;
 } */
 
-/* nav start */
+
+/* key frame */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-25deg); }
+  75% { transform: rotate(25deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes rotate-scale {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes rotate-bounce {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  50% { transform: rotate(180deg) translateY(-10px); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg)}
+}
+
+/* key frame end */
 
 
 /* nav start */
@@ -232,21 +259,28 @@ body {
 .hero-vector__1 {
   position: absolute;
   top: 63px;
+  animation: wave 2s infinite ease-in-out;
 }
 .hero-vector__2 {
   position: absolute;
   right: 0;
   top: 40px;
+  animation: rotate-scale 4s infinite ease-in-out;
 }
 .hero-vector__3 {
   position: absolute;
   bottom: 42px;
   left: 0;
+  animation: rotate-bounce 3s infinite ease-in-out;
 }
+
+
+
 .hero-vector__4 {
   position: absolute;
   right: 0;
   bottom: 60px;
+  animation: rotate 5s infinite linear;
 }
 /* hero end */
 
@@ -371,18 +405,21 @@ body {
   position: relative;
   right: 76px;
   bottom: 85px;
+  animation: rotate-scale 4s infinite ease-in-out;
 }
 
 .service-vector__2 {
   position: relative;
   top: 450px;
   right: 235px;
+  animation: rotate 5s infinite linear;
 }
 
 .service-vector__3 {
   position: relative;
   left: 999px;
   top: 94px;
+  animation: rotate 5s infinite linear;
 }
 
 /* Service end */
@@ -712,11 +749,13 @@ body {
 .client-vector__1 {
   position: relative;
   right: 88px;
+  animation: rotate-scale 4s infinite ease-in-out;
 }
 .client-vector__2 {
   position: relative;
   bottom: 624px;
   right: 106px;
+  animation: wave 2s infinite ease-in-out;
 }
 
 /* Client end */
@@ -1165,12 +1204,34 @@ textarea {
     margin-bottom: -26px;
   }
   /* footer end */
+
   .navbar {
-    display: none; /* Hide the navbar by default */
+    display: none; 
+  }
+
+  .nav-logo {
+   margin-left: 5px;
+}
+
+  .hamburger {
+    display: block; 
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .hamburger:focus {
+    outline: none;
+  }
+
+  .navbar {
+    display: none; 
   }
 
   .hamburger {
-    display: block; /* Show the hamburger button */
+    display: block; 
     font-size: 24px;
     background: transparent;
     border: none;
@@ -1183,26 +1244,8 @@ textarea {
   }
 
   /* Show the navbar when hamburger menu is active */
-  .navbar {
-    display: none; /* Hide the navbar by default */
-  }
-
   .hamburger {
-    display: block; /* Show the hamburger button */
-    font-size: 24px;
-    background: transparent;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-  }
-
-  .hamburger:focus {
-    outline: none;
-  }
-
-  /* Show the navbar when hamburger menu is active */
-  .hamburger {
-    display: block; /* Show the hamburger button */
+    display: block; 
     font-size: 24px;
     background: transparent;
     border: none;
