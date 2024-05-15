@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0 65px;
+  min-width: 1250px;
   min-height: 100vh;
   background: #19191b;
   display: flex;
@@ -85,7 +86,7 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0 auto;
 }
 
