@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 html {
   height: 100%;
@@ -73,14 +73,110 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.5px;
-  transition: background 0.3s ease; /* Added duration to the transition */
+  transition: background 0.3s ease;
 }
 
 .nav-contact--btn:hover {
   background: #ff5151;
 }
-
 /* nav end */
+
+/* hero */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 582px;
+  /* height: 393px; */
+}
+
+.hero-text > h1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 0;
+}
+
+.hero-text > p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Nunito Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px; /* 185.714% */
+  letter-spacing: -0.657px;
+  margin-top: 40px;
+}
+
+.hero-text > button {
+  width: 204px;
+  height: 58px;
+  margin-top: 70px;
+
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+
+  border: none;
+  border-radius: 4px;
+  background: #ff5151;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero-text > button > img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.hero-text > button:hover {
+  border: 1px solid #ff5151;
+  background: transparent;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-vector__1 {
+  position: absolute;
+  top: 150px;
+}
+.hero-vector__2 {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+.hero-vector__3 {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+}
+.hero-vector__4 {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+
+/* .hero-ver */
+
+/* hero end */
 
 footer {
   margin-top: auto;
