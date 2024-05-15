@@ -15,12 +15,12 @@ body {
 }
 
 /* for all component */
-.container {
-}
+/* .container {
+} */
 /* for all component */
 
 /* nav start */
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,8 +79,81 @@ body {
 
 .nav-contact--btn:hover {
   background: #ff5151;
+} */
+
+/* nav start */
+
+
+/* nav start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/* nav end */
+
+.nav-logo {
+  display: flex;
+  color: #ffffff;
+}
+
+.nav-logo img {
+  margin-right: 8px;
+}
+
+.nav-logo__text {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #ff5151;
+}
+
+.nav-contact--btn {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(1px);
+  width: 157px;
+  height: 44px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  transition: background 0.3s ease;
+}
+
+.nav-contact--btn:hover {
+  background: #ff5151;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hide the hamburger button by default */
+}
+
+
 
 /* hero */
 .hero {
@@ -837,6 +910,10 @@ textarea {
     max-width: 430px;
   }
 
+  /* nav */
+  
+  /* nav end */
+
   /* hero */
   .hero {
     display: flex;
@@ -1083,10 +1160,72 @@ textarea {
     display: flex;
     gap: 10px;
   }
-  
+
   .footer-terms__common {
     margin-bottom: -26px;
   }
   /* footer end */
+  .navbar {
+    display: none; /* Hide the navbar by default */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger button */
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .hamburger:focus {
+    outline: none;
+  }
+
+  /* Show the navbar when hamburger menu is active */
+  .navbar {
+    display: none; /* Hide the navbar by default */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger button */
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .hamburger:focus {
+    outline: none;
+  }
+
+  /* Show the navbar when hamburger menu is active */
+  .hamburger {
+    display: block; /* Show the hamburger button */
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 74px;
+  left: 0;
+  background: #333;
+  width: 100%;
+}
+
+.navbar.active a {
+  margin-right: 0;
+}
+  .nav-contact--btn {
+    display: none;
+  }
 }
 /* responsive end */
