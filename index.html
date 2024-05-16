@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg" />
     <title>Opec</title>
   </head>
   <body>
@@ -30,7 +30,7 @@
         </nav>
         <button class="nav-contact--btn">Contact Us</button>
         <button class="hamburger">
-          <img src="./assets/Menu.svg" alt="vector">
+          <img src="./assets/Menu.svg" alt="vector" />
         </button>
       </div>
     </header>
@@ -334,7 +334,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="footer-contact--us">
       <div class="footer-container">
         <div class="footer-left">
           <div class="nav-logo">
@@ -363,13 +363,13 @@
 
         <div class="footer-right">
           <h1>Contact Us</h1>
-          <form action="#" method="post">
+          <form id="form" action="/" method="post">
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Your name.."
-              required
+              placeholder="Name"
+              
             />
 
             <div class="form-two__sec">
@@ -377,15 +377,15 @@
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your email.."
-                required
+                placeholder="Email"
+                
               />
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="Your contact number.."
-                required
+                placeholder="Contact Number"
+                
               />
             </div>
 
@@ -393,10 +393,10 @@
               <textarea
                 id="message"
                 name="message"
-                placeholder="Write something.."
-                required
+                placeholder="Message"
+                
               ></textarea>
-              <button>Send message</button>
+              <button type="submit">Send message</button>
             </div>
           </form>
         </div>
@@ -416,23 +416,7 @@
     </footer>
     <!-- </div> -->
 
-    <script>
-     document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.querySelector('.hamburger');
-  const navbar = document.querySelector('.navbar');
-
-  hamburger.addEventListener('click', function () {
-    navbar.classList.toggle('active');
-  });
-
-  // Close the navbar when clicking outside of it
-  document.addEventListener('click', function (event) {
-    if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
-      navbar.classList.remove('active');
-    }
-  });
-});
-
-    </script>
+    <script src="./script/script.js"></script>
+    <script src="./script/formValidation.js"></script>
   </body>
 </html>
