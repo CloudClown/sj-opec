@@ -558,6 +558,7 @@ body {
 .portfolio-item__1 > button:hover {
   background-color: #ff5151;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .portfolio-item__display {
@@ -640,11 +641,13 @@ body {
 .client-right__shift:hover {
   background: #ff5151;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .client-left__shift:hover {
   background: #ff5151;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .client-card__container {
@@ -858,6 +861,7 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  
 }
 
 .footer-company--socials > i {
@@ -866,6 +870,7 @@ footer {
   padding: 10px 14px;
   margin-right: 10px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-company--socials > p {
