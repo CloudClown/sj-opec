@@ -1532,7 +1532,6 @@ textarea {
     outline: none;
   }
 
-  /* Show the navbar when hamburger menu is active */
   .hamburger {
     display: block;
     font-size: 24px;
