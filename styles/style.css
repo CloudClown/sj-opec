@@ -1372,7 +1372,7 @@ textarea {
     flex-direction: column;
     width: 340px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
   }
 
   .client-heading > h1 {
