@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  padding: 5px 20px;
   margin: 0 auto;
   max-width: 1250px;
   min-height: 100vh;
@@ -993,6 +994,10 @@ textarea {
     max-width: 900px;
   }
 
+  .navbar a {
+    margin-right: 25px;
+  }
+
   .hero-text > h1 {
     color: #fff;
     font-family: Rubik;
@@ -1030,9 +1035,15 @@ textarea {
     margin: 130px 0 130px;
     height: 505px;
   }
+  .service-card__container {
+    display: flex;
+    gap: 10px;
+  }
 
   .service-card {
-    width: 292px;
+    width: 30%;
+    /* width: 100%; */
+    margin: 0 auto;
   }
 
   .service-vector__1 {
@@ -1041,7 +1052,7 @@ textarea {
   }
 
   .service-vector__3 {
-    left: 693px;
+    left: 650px;
     top: 65px;
   }
 
@@ -1072,7 +1083,7 @@ textarea {
 
   .portfolio-vector__img {
     position: absolute;
-    left: 845px;
+    left: 823px;
     animation: rotate 5s infinite linear;
   }
 
@@ -1204,6 +1215,7 @@ textarea {
 @media (max-width: 480px) {
   body {
     max-width: 430px;
+    margin: 0 auto;
   }
 
   /* nav */
@@ -1271,7 +1283,7 @@ textarea {
   /* service  */
   .service {
     display: flex;
-    width: 340px;
+    /* width: 340px; */
     align-items: center;
     height: auto;
     margin-top: 95px;
